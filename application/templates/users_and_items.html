@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% block body_content %}
+<h3>Users and Item Details</h3>
+<p>{{user.id}} {{user.first_name}} {{user.last_name}}</p>
+<div class="error_message">{{message}}</div>
+<div>
+    <p>User: {{user.id}} {{user.first_name}} {{user.last_name}}</p>
+</div>
+<div>
+    {% for item in user.items %}
+    <ul>
+        <li>Item details: {{item.item_name}} </li>
+    </ul>
+{% endfor %}
+</div>
+{% endblock %}
+{% block footer_content %}
+<footer>
+     &copy; 2022
+</footer>
+{% endblock %}
+
+

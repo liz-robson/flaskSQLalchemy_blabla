@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Item Page</title>
+</head>
+<body>
+<div>
+{% for item in items %}
+   <p>{{item.id}} {{item.item_name}} {{item.item_description}} {{item.size}}</p>
+{% endfor %}
+    <br>
+    {{ message }}
+</div>
+</body>
+</html>
+
